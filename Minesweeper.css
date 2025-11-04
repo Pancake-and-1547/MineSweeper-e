@@ -1,0 +1,68 @@
+.title{
+  text-align: center;
+}.table{
+  text-align: center;
+  margin: 0 auto;
+}.button{
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+  font-family: 'Consolas', 'Courier New', 'Arial Black', 'Tahoma', monospace;
+  font-weight: bold;
+}.button_reset{
+  margin: 0 auto;
+  display: block;
+  width: 80px;
+  height: 30px;
+}
+
+/* ===== 响应式设计开始 ===== */
+
+/* 手机屏幕：宽度小于等于 480px */
+@media (max-width: 480px) {
+  .button {
+    width: 30px;   /* 按钮变小 */
+    height: 30px;  /* 按钮变小 */
+    font-size: 10px; /* 字体变小 */
+  }
+  
+  .title {
+    font-size: 18px; /* 标题变小 */
+  }
+  
+  .button_reset {
+    width: 60px;   /* 重置按钮也变小 */
+    height: 25px;
+    font-size: 12px;
+  }
+}
+
+/* 平板屏幕：宽度在 481px 到 768px 之间 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .button {
+    width: 35px;   /* 比手机大一点 */
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .title {
+    font-size: 22px;
+  }
+}
+
+/* 非常小的屏幕（老旧手机） */
+@media (max-width: 320px) {
+  .button {
+    width: 25px;   /* 更小的按钮 */
+    height: 25px;
+    font-size: 8px;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+  
+  .table {
+    font-size: 12px;
+  }
+}

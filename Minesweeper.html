@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html>
+<!-- HTML 文档的根元素 -->
+
+<head>
+  <!-- 文档的头部，包含元信息和标题 -->
+  <meta charset="utf-8">
+  <!-- 设置文档的字符编码为 UTF-8，支持多语言字符 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 指定浏览器使用最新的渲染模式 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 设置视口宽度为设备宽度，初始缩放比例为 1，适配移动设备 -->
+  <title>扫雷</title>
+  <!-- 定义网页的标题，显示在浏览器标签上 -->
+
+  <link rel = 'stylesheet' href = 'Minesweeper.css'>
+</head>
+
+<body>
+  <!-- 文档的主体内容 -->
+  <h1 class = 'title'>Welcome to the Minesweeper game!</h1>
+
+  <table class = 'table'>
+    <tr>
+      <td><button class = 'button' id = 1></button></td>
+      <td><button class = 'button' id = 2></button></td>
+      <td><button class = 'button' id = 3></button></td>
+      <td><button class = 'button' id = 4></button></td>
+      <td><button class = 'button' id = 5></button></td>
+      <td><button class = 'button' id = 6></button></td>
+      <td><button class = 'button' id = 7></button></td>
+      <td><button class = 'button' id = 8></button></td>
+      <td><button class = 'button' id = 9></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 10></button></td>
+      <td><button class = 'button' id = 11></button></td>
+      <td><button class = 'button' id = 12></button></td>
+      <td><button class = 'button' id = 13></button></td>
+      <td><button class = 'button' id = 14></button></td>
+      <td><button class = 'button' id = 15></button></td>
+      <td><button class = 'button' id = 16></button></td>
+      <td><button class = 'button' id = 17></button></td>
+      <td><button class = 'button' id = 18></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 19></button></td>
+      <td><button class = 'button' id = 20></button></td>
+      <td><button class = 'button' id = 21></button></td>
+      <td><button class = 'button' id = 22></button></td>
+      <td><button class = 'button' id = 23></button></td>
+      <td><button class = 'button' id = 24></button></td>
+      <td><button class = 'button' id = 25></button></td>
+      <td><button class = 'button' id = 26></button></td>
+      <td><button class = 'button' id = 27></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 28></button></td>
+      <td><button class = 'button' id = 29></button></td>
+      <td><button class = 'button' id = 30></button></td>
+      <td><button class = 'button' id = 31></button></td>
+      <td><button class = 'button' id = 32></button></td>
+      <td><button class = 'button' id = 33></button></td>
+      <td><button class = 'button' id = 34></button></td>
+      <td><button class = 'button' id = 35></button></td>
+      <td><button class = 'button' id = 36></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 37></button></td>
+      <td><button class = 'button' id = 38></button></td>
+      <td><button class = 'button' id = 39></button></td>
+      <td><button class = 'button' id = 40></button></td>
+      <td><button class = 'button' id = 41></button></td>
+      <td><button class = 'button' id = 42></button></td>
+      <td><button class = 'button' id = 43></button></td>
+      <td><button class = 'button' id = 44></button></td>
+      <td><button class = 'button' id = 45></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 46></button></td>
+      <td><button class = 'button' id = 47></button></td>
+      <td><button class = 'button' id = 48></button></td>
+      <td><button class = 'button' id = 49></button></td>
+      <td><button class = 'button' id = 50></button></td>
+      <td><button class = 'button' id = 51></button></td>
+      <td><button class = 'button' id = 52></button></td>
+      <td><button class = 'button' id = 53></button></td>
+      <td><button class = 'button' id = 54></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 55></button></td>
+      <td><button class = 'button' id = 56></button></td>
+      <td><button class = 'button' id = 57></button></td>
+      <td><button class = 'button' id = 58></button></td>
+      <td><button class = 'button' id = 59></button></td>
+      <td><button class = 'button' id = 60></button></td>
+      <td><button class = 'button' id = 61></button></td>
+      <td><button class = 'button' id = 62></button></td>
+      <td><button class = 'button' id = 63></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 64></button></td>
+      <td><button class = 'button' id = 65></button></td>
+      <td><button class = 'button' id = 66></button></td>
+      <td><button class = 'button' id = 67></button></td>
+      <td><button class = 'button' id = 68></button></td>
+      <td><button class = 'button' id = 69></button></td>
+      <td><button class = 'button' id = 70></button></td>
+      <td><button class = 'button' id = 71></button></td>
+      <td><button class = 'button' id = 72></button></td>
+    </tr>
+    <tr>
+      <td><button class = 'button' id = 73></button></td>
+      <td><button class = 'button' id = 74></button></td>
+      <td><button class = 'button' id = 75></button></td>
+      <td><button class = 'button' id = 76></button></td>
+      <td><button class = 'button' id = 77></button></td>
+      <td><button class = 'button' id = 78></button></td>
+      <td><button class = 'button' id = 79></button></td>
+      <td><button class = 'button' id = 80></button></td>
+      <td><button class = 'button' id = 81></button></td>
+    </tr>
+  </table>
+
+  <br>
+  <table class = 'table'>
+      <tr>
+          <td><button id = 'reset' class = 'button_reset'>Reset</button></td>
+          <td><button id = 'testing' class = 'button_reset'>testing</button></td>
+          <td><p id = 'timer'>0 seconds</p></td>
+      </tr>
+  </table>
+
+
+  <script src = 'Minesweeper.js'></script>
+  <!-- 也许总有一天我可以写完的 -->>
+</body>
+
+</html>
